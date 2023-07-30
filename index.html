@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astaunaut signup page</title>
+    <!-- <link rel="stylesheet" href="Peace.css" type="text/css"> -->
+    <style>
+        body{
+    margin: 0px;
+    padding: 0px;
+    color: beige;
+    width: 100%;
+    height: 100%;
+    min-height: 890px;
+    max-height: 1280px;;
+    background-image: url("3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+main{
+    height: 90%;
+}
+form{
+    width: 50%;
+}
+section{
+    justify-content: space-between; 
+    display: flex;
+    width: 90%;
+    padding: 20px;
+}
+header{
+    height: 10%;
+    background-color: rgba(117, 98, 98, 0.192);
+    margin: 20px 30px 0px 30px;
+    border: 1px solid rgba(0, 0, 0, 0.199);
+    border-radius: 50px;
+}
+h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px auto 0px auto;
+    text-align: center;
+    width: 80%;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 50px;
+}
+h2{
+    text-align: center;
+    color: antiquewhite;
+    font-family: Myfont;
+    src: url("/Websites/Baby\ Aletha.otf");
+    margin: 0px auto 0px auto;
+
+}
+form{
+    padding-top: 15px;
+}
+#file{
+    height: 30px;
+    width: 30px;
+    background-color: beige;
+    border: 1px solid beige;
+    border-radius: 6px;
+}
+span{
+    padding-top: none;
+    font-size: 20px;
+}
+.resume{
+    padding: 20px;
+    font-size: 20px;
+    margin: 0px;
+}
+.resume:hover{
+    color: rgb(121, 255, 226);
+    background-color: rgba(0, 0, 0, 0.459);
+    border-radius: 50px;
+}
+input{
+    width: 200px;
+    height: 30px;
+}
+label{
+    font-size: 20px ;
+}
+.selection{
+    background: rgba(0, 0, 0, 0.685);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    display: inline-block;
+    padding: 10px;
+    width: auto;
+    height: 40px;
+}
+.selection label{
+    background: transparent;
+    border: 1px solid transparent;
+    display: inline-block;
+    height: 20px;
+    border-radius: 3px;
+    padding: 10px;
+}
+.selection label:hover{
+    background-color: #5e5555;
+}
+.seleciton input[type=radio]{
+    display: none;
+}
+.selection input[type=radio]:checked + label{
+    background: #302c2c;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.Apply{
+    display: inline-block;
+    text-align: center;
+    margin: 0px auto;
+}
+#submit{
+    width: 280px;
+    height: 35px;
+    font-size: 20px;
+    border: 1px soild transparent;
+    border-radius: 5px;
+    font-weight: bolder;
+    color: beige;
+    background-color: rgba(255, 218, 218, 0.308);
+    text-shadow: rgb(255, 255, 255);
+}
+#submit:hover{
+    background-color: gray;
+}
+#foot{
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    left: 30%;
+    right: 30%;
+    display: flex;
+    align-content: flex-end;
+    justify-content: center;
+}
+@media screen and (max-width: 1000px){
+    body{
+        width:100%;
+        background-size: 120% 120%;
+    }
+    form{
+        width: 100%;
+    }
+    main{
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    section{ 
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+     }
+    div{
+        width: 90%;
+        margin: 0px auto;
+    }
+    label{
+        align-self: center;
+        margin: 0px auto 0px auto;
+    }
+    input{
+        font-size: large ;
+        text-align: center;
+        margin: 0px auto 0px auto;
+        width: 100%;
+        height: 30px;
+    }
+    .resume{
+        text-decoration: underline;
+        text-align: center ;
+        color: blue;
+    }
+    span{
+        padding-top: none;
+        font-size: 25px;
+    }
+    header{
+        padding: 15px ;
+        width: 100%;
+        margin: 0px 15px 5px 5px; 
+    }
+    
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Intersteller</h1>
+        <h2>A trip to the cosmos and beyond</h2>
+    </header>
+    <main>
+        <form action="#">
+            <section>
+                <div class="Name">
+                    <label for="Full Name">
+                        <b>Full Name:</b>&nbsp; &nbsp; &nbsp; &nbsp; <br>
+                        <input placeholder="Muhammad Umair" type="text" id="Full Name">
+                    </label>
+                </div>
+                <!--&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+                <div class="resume">
+                    <input type="file" hidden id="CV">
+                    <label for="CV">
+                        <img src="file-1453.png" title="file" alt="file" width="30px" height="25px" id="file">
+                        <span>Upload Your CV</span>
+                    </label>
+                </div>
+            </section>
+            <br> <br>
+            <section>
+                <div class="email">
+                    <label for="email">
+                        <b>Email:</b> &nbsp; &nbsp; &nbsp; &nbsp;   <br>
+                        <input placeholder="abcd123@gmail.com" type="email" id="email">
+                    </label>
+                </div>
+                <!--&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+                <div class="Phone">
+                    <label for="Ph-Number">
+                        <b>Phone No.</b>  &nbsp; &nbsp; &nbsp; &nbsp;   <br>
+                        <input type="number" id="Ph-Number" placeholder="+92 313 5671899">
+                    </label>
+                </div>
+            </section>
+            <section>
+                <div class="Gender">
+                    <label for="Gender">
+                        &nbsp;<b>Gender:</b>
+                    </label> <br>
+                    <div class="selection">
+                        <input checked type="radio" name="Gender" value="female" id="female" hidden>
+                        <label for="female">
+                            Female
+                        </label>
+                        <input type="radio" name="Gender" value="male" id="male" hidden>
+                        <label for="male">
+                            Male
+                        </label>
+                    </div>
+                </div>
+                <!--&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+                <div class="DOB">
+                    <label for="dob"><b>Date of Birth:</b></label><br>
+                    <input type="date" id="dob" name="DateofBirth">
+                </div>
+            </section>
+            <br>
+            <section>
+                <div class="Apply">
+                    <input type="submit" id="submit" name="submit" value="Apply">
+                </div>
+            </section>
+        </form>
+    </main>
+    <p id="foot">
+        This is an Astraunaut signup Form.
+    </p>
+</body>
+</html>
